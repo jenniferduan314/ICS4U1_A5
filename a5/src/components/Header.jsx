@@ -14,15 +14,15 @@ function Header() {
             </link>
             
             <div>
-                <img src={MeowMovies} alt="MeowMovies logo" width="50" id="logo" />
+                <img src={MeowMovies} alt="MeowMovies logo" width="150" id="logo" />
                 <div className="header-text"  onClick={() => navigate(`/`)}>
-                    <div className="webtitle">MEOW MOVIES</div>
+                    <div className="webtitle">「MEOW MOVIES!」</div>
                 </div>
             </div>
             <div className="header-frame">
-                <input type="text" id="search-bar" height="30" placeholder="Search" />
+                <input type="text" id="search-bar" height="40" placeholder="Search" />
                 <button id="search-button">
-                    <img src={Search} alt="search button" height="30" />
+                    <img src={Search} alt="search button" height="40" />
                 </button>
             </div>
         </div>
