@@ -79,6 +79,7 @@
 
 
 #logo {
+    margin-left: 1.9rem; 
     filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
     transition: transform 0.3s ease;
 }
