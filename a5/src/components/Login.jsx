@@ -10,8 +10,11 @@ function Login() {
 
     function log() {
         if (pass === "ilovemovies") {
+            localStorage.setItem("user", "true");
             return navigate("/movies/genre/28");
+            
         } else {
+            localStorage.setItem("user", "false");
             alert("Password incorrect");
         }
     }
