@@ -5,6 +5,7 @@ import LoginView from "../src/views/LoginView";
 import MoviesView from "../src/views/MoviesView";
 import GenreView from "./views/GenreView";
 import DetailView from "./views/DetailView";
+import ErrorView from "./views/ErrorView";
 import './App.css';
 
 function App() {
@@ -12,15 +13,19 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomeView />} />
-        <Route path="/register" element={<RegisterView />} />
         <Route path="/login" element={<LoginView />} />
-        <Route path="/movies" element={<MoviesView />}>
+        <Route path="/register" element={<RegisterView />} />
+          <Route path="/movies" element={<MoviesView />}>
           <Route path="genre/:id" element={<GenreView />} />
           <Route path="details/:id" element={<DetailView />} />
-        </Route>
+          </Route>
+        <Route path="*" element={<ErrorView />} />
       </Routes>
     </BrowserRouter>
   )
+
+
+
 }
 
 export default App

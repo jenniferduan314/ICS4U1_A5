@@ -9,7 +9,7 @@ function Login() {
     const navigate = useNavigate();
 
     function log() {
-        if (pass === "iloveyou") {
+        if (pass === "ilovemovies") {
             return navigate("/movies/genre/28");
         } else {
             alert("Password incorrect");
