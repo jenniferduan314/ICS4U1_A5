@@ -1,52 +1,147 @@
-.account-box{
-    position: absolute;
-    color:white;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 350px;
-    background-color:rgb(47, 47, 47);
-    padding: 25px 50px 45px;
-    line-height: 2;
-    border-radius: 10px;
-}
-
-.account-title{
-    text-align: center;
-    font-size: 30px;
-}
-
-.account-text{
-    display:block;
-    font-size: 20px;
-}
-
-.account-input{
-    width: 99%;
-    padding: 2% 0 2% 0.5%;
-}
-
-.account-no{
-    display: inline-block;
-    color: #00d56e;
-}
-
-.account-no:hover{
-    color: #00fb82;
-}
-
-.account-button{
-    display: block;
+/* Account.css */
+.hero {
+    position: relative;
     width: 100%;
-    height: 35px;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    text-align: center;
-    background-color: #00d76f;
-    font-size: 17px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    height: 100vh;
+    overflow: hidden;
 }
 
-.account-button:hover{
-    background-color:#00984f;
+#hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.7) 30%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.3) 70%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+.hero-frame {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(198, 0, 0, 0.5);
+}
+
+.account-title {
+    color: white;
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.account-box label {
+    color: white;
+    font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.account-text {
+    color: white;
+    font-family: "Cal Sans", sans-serif;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.account-input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+}
+
+.account-input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(198, 0, 0, 0.8);
+}
+
+.account-button {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    background: linear-gradient(to right, #c60000, #8b0000);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: "Staatliches", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.account-button:hover {
+    background: linear-gradient(to right, #d10000, #9b0000);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(198, 0, 0, 0.4);
+}
+
+.account-no {
+    color: #ab0e0e;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.account-no:hover {
+    color: #ab0e0e;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .account-box {
+        padding: 1.5rem 2rem;
+        margin: 0 1rem;
+    }
+    
+    .account-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .account-box {
+        padding: 1rem 1.5rem;
+    }
+    
+    .account-title {
+        font-size: 1.8rem;
+    }
 }

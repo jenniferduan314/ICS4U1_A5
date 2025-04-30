@@ -12,7 +12,6 @@ function Footer() {
                 <a href="f">Privacy Notice</a>
             </div>
             <div className="footer-grid">
-                <a href="e"></a>
                 <a href="d">Redeem</a>
                 <a href="c">New Deals</a>
             </div>

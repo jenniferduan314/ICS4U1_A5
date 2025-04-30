@@ -1,35 +1,82 @@
+/* Genre.css */
+
 .genre-container {
-    min-width: 150px;
-    width: 25%;
-    padding: 20px;
+    padding: 2rem;
+    max-width: 200px;
+    margin: 0 auto;
     text-align: center;
-    background-color: #00b85f;
-    justify-content: center;
-    color: white;
-    border: #00d56e;
-    border-width: thick;
-    border-style: solid;
 }
 
 .genre-title {
-    font-size: 35px;
-    padding: 10px;
+    font-family: "Staatliches", sans-serif;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
     display: block;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px rgba(173, 21, 21, 0.3);
+    letter-spacing: 1px;
 }
 
 .genre-list {
+    font-family: "Staatliches", sans-serif;
+    font-size: 1.7rem;
     color: white;
-    background-color: #c60000;
-    border-color: transparent;
-    border-radius: 5px;
-    font-size: 20px;
-    height: 40px;
-    padding: 3px;
-    margin: 9px;
-    width: 75%;
+    background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
+    border: none;
+    border-radius: 12px;
+    padding: 1.5rem 2.5rem;
+    margin: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    min-width: 180px;
+}
+
+.genre-list::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, rgba(198, 0, 0, 0.8), transparent);
+    transition: height 0.3s ease;
+    z-index: -1;
+    border-radius: 12px;
 }
 
 .genre-list:hover {
-    background-color: #9d0e0e;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 5px rgba(198, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.genre-list:hover::before {
+    height: 100%;
+}
+
+/* Responsive grid layout */
+@media (min-width: 768px) {
+    .genre-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    .genre-title {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    .genre-title {
+        font-size: 2.2rem;
+    }
+    .genre-list {
+        padding: 1rem 1.8rem;
+        font-size: 1rem;
+        min-width: 140px;
+    }
 }
