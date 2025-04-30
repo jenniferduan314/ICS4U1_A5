@@ -1,0 +1,67 @@
+.header {
+    position: relative;
+    background-color: #c60000;
+    width: 100%;
+    min-width: 600px;
+    height: 60px;
+    color: white;
+}
+
+#logo {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+.header-text {
+    position: absolute;
+    top: 15px;
+    font-size: 25px;
+}
+
+.webtitle {
+    position: absolute;
+    left: 80px;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.webtitle:hover{
+    color: rgb(237, 237, 237)
+}
+
+.header-frame {
+    position: relative;
+    width: 100%;
+    min-width: 600px;
+    top: 15px;
+}
+
+#search-bar {
+    position: absolute;
+    top: 5px;
+    font-size: 10px;
+    height: 15px;
+    right: 15px;
+    width: 200px;
+    border-color: #c60000;
+    border-radius: 10px;
+    border-width: 3px;
+    background-color: #c60000;
+    color: white;
+    padding: 3px;
+}
+
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+#search-button {
+    position: absolute;
+    right: 230px;
+    background-color: transparent;
+    border-color: transparent;
+}
