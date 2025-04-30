@@ -16,7 +16,8 @@ function AllMovies() {
                 `https://api.themoviedb.org/3/discover/movie?api_key=${import.meta.env.VITE_TMDB_KEY}&with_genres=${id}&page=${page}`
             );
             setMovies(response.data.results);
-            setTotalPages(response.data.total_pages);
+            // Set total pages to whichever is smaller: API's total pages or 20
+            setTotalPages(Math.min(response.data.total_pages, 20));
         } getMovies();
     }, [id, page]);
 
@@ -31,9 +32,7 @@ function AllMovies() {
     }
 
     function NextPage() {
-        console.log("hi");
-        if (page < totalPages) {
-            console.log("hi");
+        if (page < totalPages) {  // Now totalPages won't exceed 20
             setPage(page + 1);
         }
     }

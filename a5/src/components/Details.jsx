@@ -20,17 +20,18 @@ function Details() {
 
     return (
         <div className="details-movie">
-            <h1 className="details-title">{movie.title}</h1>
+            <h1 className="details-title">☆⋅ {movie.title} ⋅☆</h1>
             <h3 className="details-tagline">{movie.tagline}</h3>
             <p className="details-overview">{movie.overview}</p>
             <div className="details-info">
                 <p><strong>Release Date: </strong>{movie.release_date}</p>
                 <p><strong>Runtime: </strong>{movie.runtime} minutes</p>
-                <p><strong>Revenue: </strong>${movie.revenue}</p>
+                <p><strong>Revenue: </strong>$ {movie.revenue}</p>
+                <p><strong>Originated from: </strong>{movie.origin_country}</p>
             </div>
             <img id="poster" width="300px" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
             <div className="trailers-section">
-                <h2>Trailers</h2>
+                <h2>⋆⋅☆⋅ Trailers ⋅☆⋅⋆</h2>
                 <div className="trailers-grid">
                     {movie.videos && movie.videos.results
                         .filter(trailer => trailer.type === 'Trailer')
@@ -47,6 +48,8 @@ function Details() {
                         ))}
                 </div>
             </div>
+            
+            
         </div>
     )
 }
