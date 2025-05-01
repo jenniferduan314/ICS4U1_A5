@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router";
+import Errorcat from "../assets/images/catwink.png";
 import "./ErrorView.css";
 
 function ErrorView() {
@@ -8,8 +9,9 @@ function ErrorView() {
         <div className="error-container">
             <h1 className="error-title">404 ERROR</h1>
             <h2 className="error-subtitle">Page Not Found</h2>
+            <div><img src={Errorcat} alt="Error Cat" width="350" id="Error" /></div>
             <p className="error-message">
-                It looks page you're looking for doesn't exist or has been moved.
+                It looks page you're looking for doesn't exist or has been moved!
                 
             </p>
             
