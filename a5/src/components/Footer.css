@@ -1,4 +1,5 @@
-/* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
 .footer {
     background: linear-gradient(
         to top,
@@ -27,7 +28,7 @@
     background: linear-gradient(
         to top,
         rgba(198, 0, 0, 1) 0%,
-        rgba(198, 0, 0, 0.8) 20%,
+        rgba(198, 0, 0, 0.8) 30%,
         rgba(198, 0, 0, 0.4) 70%,
         rgba(198, 0, 0, 0) 100%
     );
