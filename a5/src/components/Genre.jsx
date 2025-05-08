@@ -7,11 +7,12 @@ function Genres(prop) {
     return (
         <div className="genre-container">
             <label className="genre-title">Genres</label>
+            <hr class="rounded"></hr>
             {prop.genreList.map((category) => (
                 <button key={category.id} className="genre-list" onClick={() => navigate(`genre/${category.id}`)}>{category.genre}</button>
             ))}
         </div>
     )
 }
-
+ 
 export default Genres;

@@ -12,10 +12,14 @@
     font-size: 3rem;
     color: rgb(255, 255, 255);
     display: block;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-shadow: 0 0 10px rgba(173, 21, 21, 0.3);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
+hr.rounded {
+    border-top: 8px solid #ad1c1c;
+    border-radius: 5px;
+  }
 
 .genre-list {
     font-family: "Staatliches", sans-serif;

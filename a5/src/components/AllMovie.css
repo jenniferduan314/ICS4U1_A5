@@ -6,15 +6,15 @@
     padding: 2rem;
     max-width: 1000px;
     margin: 0 auto;
-    justify-items: center; /* Centers all grid items */
+    justify-items: center; 
 }
 
 .movie {
     transition: all 0.3s ease;
     cursor: pointer;
-    text-align: center; /* Centers the image horizontally */
+    text-align: center; 
     width: 100%;
-    max-width: 200px; /* Consistent sizing */
+    max-width: 200px; 
 }
 
 .movie-poster {
@@ -36,7 +36,7 @@
     z-index: 10;
 }
 
-/* Pagination controls */
+
 .movies-pages {
     grid-column: 1 / -1;
     display: flex;

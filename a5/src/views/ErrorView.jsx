@@ -7,11 +7,11 @@ function ErrorView() {
 
     return (
         <div className="error-container">
-            <h1 className="error-title">404 ERROR</h1>
+            <h1 className="error-title">404 MEOW-RROR</h1>
             <h2 className="error-subtitle">Page Not Found</h2>
             <div><img src={Errorcat} alt="Error Cat" width="350" id="Error" /></div>
             <p className="error-message">
-                It looks page you're looking for doesn't exist or has been moved!
+                It looks like the page you're looking for doesn't exist or has been moved!
                 
             </p>
             
