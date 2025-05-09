@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 .details-movie {
-    background: linear-gradient(135deg, #c60000, #700303, #530606);
+    background: linear-gradient(165deg, #c60000, #700303, #530606);
     color: white;
     font-family: 'Staatliches', sans-serif;
     padding: 3rem;
@@ -37,7 +37,7 @@
 
 .details-overview {
     font-size: 1.4rem;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto 2rem;
     line-height: 1.6;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -47,7 +47,7 @@
     background: rgba(0, 0, 0, 0.3);
     padding: 1.5rem;
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto 2rem;
     font-size: 1.3rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -86,7 +86,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 750px;
     margin: 0 auto;
 }
 
@@ -95,7 +95,7 @@
 }
 
 .trailer-thumbnail {
-    width: 100%;
+    width: 90%;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
     transition: all 0.3s ease;

@@ -47,6 +47,7 @@ function Details() {
                             </div>
                         ))}
                 </div>
+                
             </div>
             
             
