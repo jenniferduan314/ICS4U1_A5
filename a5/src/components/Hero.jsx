@@ -13,8 +13,7 @@ function Hero() {
                 <div className="title-box">
                     <div className="title-text">
                         <h4>The best site for all your favourite meow-vies!</h4>
-                        <h1>Watch anytime, all the time.</h1>
-                        
+                        <h1>Watch anytime, all the time.</h1> 
                     </div>
                     <button className="buttons account" onClick={() => navigate("/register")}>Create Account</button>
                     <button className="buttons signup" onClick={() => navigate("/login")}>Sign In</button>
