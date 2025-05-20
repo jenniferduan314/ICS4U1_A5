@@ -32,7 +32,7 @@ function AllMovies() {
     }
 
     function NextPage() {
-        if (page < totalPages) {  // Now totalPages won't exceed 20
+        if (page < totalPages) { 
             setPage(page + 1);
         }
     }

@@ -11,8 +11,7 @@ function ErrorView() {
             <h2 className="error-subtitle">Page Not Found</h2>
             <div><img src={Errorcat} alt="Error Cat" width="350" id="Error" /></div>
             <p className="error-message">
-                It looks like the page you're looking for doesn't exist or has been moved!
-                
+                It looks like the page you're looking for doesn't exist or has been moved!  
             </p>
             
             <button 
